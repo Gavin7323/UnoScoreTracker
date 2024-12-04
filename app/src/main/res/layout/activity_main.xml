@@ -4,36 +4,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#202040">
 
-    <!-- Title -->
     <TextView
         android:id="@+id/scoreTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Uno Score Tracker"
         android:textSize="24sp"
+        android:textColor="#ffffff"
         android:layout_marginBottom="32dp" />
 
-    <!-- Player 1 score -->
     <TextView
         android:id="@+id/player1Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Player 1: 0"
         android:textSize="18sp"
+        android:textColor="#ffffff"
         android:layout_marginBottom="16dp" />
 
-    <!-- Player 2 score -->
     <TextView
         android:id="@+id/player2Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Player 2: 0"
         android:textSize="18sp"
+        android:textColor="#ffffff"
         android:layout_marginBottom="32dp" />
 
-    <!-- Buttons to increase score -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -44,22 +44,46 @@
             android:id="@+id/increasePlayer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Increase Player 1" />
+            android:text="1 point (Player 1)"
+            android:backgroundTint="#ff0000"/>
 
         <Button
             android:id="@+id/increasePlayer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Increase Player 2"
-            android:layout_marginStart="16dp" />
+            android:text="1 point (Player 2)"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#0000ff"/>
     </LinearLayout>
 
-    <!-- Reset button -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/increase1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 points (Player 1)"
+            android:backgroundTint="#ffd800"/>
+
+        <Button
+            android:id="@+id/increase2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 points (Player 2)"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#00ff00"/>
+    </LinearLayout>
+
     <Button
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset Scores"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#282828"/>
 
 </LinearLayout>
