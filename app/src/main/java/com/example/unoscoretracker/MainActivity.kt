@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
             updateScores()
         }
 
-
         increase1Button.setOnClickListener {
             player1Score += 10
             updateScores()
